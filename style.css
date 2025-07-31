@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/image/docter1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0e1dd;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+ margin-right: 200px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e0e1dd;
+  font-size: 20px;  
+
+
+}
+.nav-links li:hover{
+    border-bottom: 1px solid #e0e1dd;
+}
+
+.hero-content {
+  padding: 100px 50px;
+  max-width: 600px;
+  margin-left: 40px;
+    color: #e0e1dd;
+
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+}
+
+.hero-content span {
+  color: #e0e1dd;
+
+}
+
+.hero-content p {
+  font-size: 19px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #e0e1dd;
+  color: #0d1b2a;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.btn:hover{
+      border: none;
+    border-radius: 6px;
+   background-color: #0d1b2a;
+  color: #e0e1dd;
+}
+.hero-image {
+  position: absolute;
+ margin-right: 700px;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DEPARTMENTS SECTION */
+.departments-section {
+  padding: 60px 50px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.departments-section h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #0d1b2a;
+  text-transform: uppercase;
+}
+
+.section-desc {
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.departments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.dept-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  max-width: 220px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dept-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dept-box i {
+  color: #0d1b2a;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+.dept-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #0d1b2a;
+  text-transform: uppercase;
+}
+
+.dept-box p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.btn.green {
+  padding: 10px 20px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition:  0.3s ease;
+}
+
+.btn.green:hover {
+  background-color: #e0e1dd;
+  color: #0d1b2a;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 50px;
+  background-color: #fff;
+}
+
+.about-image {
+  flex: 1 1 350px;
+  max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-text {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #0d1b2a;
+  text-transform: uppercase;
+}
+
+.about-text p {
+  color: #0d1b2a;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.about-text .btn.green {
+  padding: 10px 20px;
+    background-color: #e0e1dd;
+color: #0d1b2a;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.about-text .btn.green:hover {
+  background-color:  #0d1b2a;;
+  color: #e0e1dd;
+}
+/* MEDIA QUERIES */
+.doctors-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #0d1b2a;
+}
+
+.doctors-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.doctor-card {
+  background-color: white;
+  color: #0d1b2a;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.doctor-card h3 {
+  margin: 15px 0 5px;
+  font-size: 18px;
+}
+
+.doctor-card p {
+  margin: 0;
+  color: #0d1b2a;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+.view-all {
+  margin-top: 40px;
+}
+
+.view-all button {
+  padding: 10px 20px;
+  background-color: #e0e1dd;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-all button:hover {
+  background-color:#0d1b2a;
+    color: #e0e1dd;
+
+}
+
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+  width: 45%;
+  min-width: 300px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.info-box p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #e0e1dd;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+}
+
+.map-container {
+  width: 100%;
+}
+
+.footer {
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-box h4, .footer-box h3 {
+  margin-bottom: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+  font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 0;
+  }
+
+  .hero-content {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .hero-image {
+    display: none;
+
+  }
+  .hero-image{
+    width: 100%;
+    height: 300px;
+    margin-right: 0 auto;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .departments, .doctors-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-image, .about-text {
+    width: 100%;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
+  }
+  .about-text {
+    padding: 20px;
+  }
+  .about-text h2 {
+    font-size: 28px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .about-text .btn.green {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .doctors-section {
+    padding: 30px 20px;
+  }
+  .doctor-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .doctor-card img {
+    width: 100%;
+    height: auto;
+  }
+  .about-text h2 {
+    font-size: 32px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info, .contact-form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-box {
+    width: 100%;
+    text-align: center;
+  }
+  .footer-box ul {
+    padding-left: 0;
+  }
+  .footer-box ul li {
+    margin-bottom: 10px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+  .hero-section {
+    height: auto;
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .hero-content span {
+    font-size: 24px;
+  }
+  .hero-image {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+  }
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+  .nav-links li:hover {
+    border-bottom: none;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .btn:hover {
+    border-radius: 4px;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+  }
+  .departments-section h2 {
+    font-size: 32px;
+  }
+  .departments-section .section-desc {
+    font-size: 16px;
+  }
+  .dept-box {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .dept-box i {
+    font-size: 36px;
+  }
+  .dept-box h3 {
+    font-size: 20px;
+  }
+  .dept-box p {
+    font-size: 14px;
+  }
+  .about-text h2 {
+    font-size: 36px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-text .btn.green {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .doctors-section {
+    padding: 30px 20px;
+  }
+  .doctors-section .section-title {
+    font-size: 24px;
+  }
+  .doctors-section .section-desc {
+    font-size: 14px;
+  }
+  .doctor-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .doctor-card img {
+    width: 100%;
+    height: auto;
+  }
+  .doctor-card h3 {
+    font-size: 16px;
+  }
+  .doctor-card p {
+    font-size: 14px;
+  }
+  .view-all button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .contact-info h2 {
+    font-size: 24px;
+  }
+  .contact-info p {
+    font-size: 14px;
+  }
+  .contact-form input, .contact-form textarea {
+    font-size: 14px;
+  }
+  .contact-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  .map-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-box h4, .footer-box h3 {
+    font-size: 18px;
+  }
+  .footer-box ul {
+    padding-left: 0;
+  }
+  .footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer-bottom {
+    font-size: 12px;
+  }
+  .hero-section {
+    padding: 20px;
+    height: auto;
+  }
+  .hero-content {
+    text-align: center;
+    padding: 20px;
+  }
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  .hero-content p {
+    font-size: 14px;
+  }
+  .hero-content span {
+    font-size: 20px;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .nav-links li:hover {
+    border-bottom: none;
+  }
+  .btn {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .btn:hover {
+    border-radius: 4px;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+  }
+  .departments-section h2 {
+    font-size: 32px;
+  }
+  .departments-section .section-desc {
+    font-size: 16px;
+  }
+  .dept-box {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .dept-box i {
+    font-size: 36px;
+  }
+  .dept-box h3 {
+    font-size: 20px;
+  }
+  .dept-box p {
+    font-size: 14px;
+  }
+  .about-text h2 {
+    font-size: 36px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-text .btn.green {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .doctors-section {
+    padding: 30px 20px;
+  }
+  .doctors-section .section-title {
+    font-size: 24px;
+  }
+  .doctors-section .section-desc {
+    font-size: 14px;
+  }
+
+  
+}
+
