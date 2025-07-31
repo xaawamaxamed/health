@@ -13,7 +13,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url('https://i.pinimg.com/736x/a7/d8/eb/a7d8ebaf9f5983cff16b24f6f050a224.jpg');
+  background-image: url(image/docter1.png);
   background-size: cover;
   background-position: center;
 }
@@ -748,7 +748,28 @@ color: #0d1b2a;
   .doctors-section .section-desc {
     font-size: 14px;
   }
-
+  .doctor-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .doctor-card img {
+    width: 100%;
+    height: auto;
+  }
+  .doctor-card h3 {
+    font-size: 16px;
+  }
+  .doctor-card p {
+    font-size: 14px;
+  }
+  .view-all button {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
   
 }
 
